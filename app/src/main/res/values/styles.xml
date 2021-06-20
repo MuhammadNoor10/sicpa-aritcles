@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolbarPrimary" parent="Widget.MaterialComponents.Toolbar.Surface">
+        <item name="android:layout_height">?android:actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="titleTextColor">@color/textColorWhite</item>
+        <item name="subtitleTextColor">@color/textColorWhite</item>
+        <item name="titleTextAppearance">@style/TitleTextApp</item>
+        <item name="navigationIcon">@drawable/ic_back_white</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="TitleTextApp" parent="android:TextAppearance">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="WrapDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="MaterialButton.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">45dp</item>
+        <item name="android:layout_marginEnd">45dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="backgroundTint">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_l_sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+    </style>
+
+    <style name="TabTextApp" parent="android:TextAppearance">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/text_size_m_dp</item>
+    </style>
+
+    <style name="InputStyle.White" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_input_state_drawable_white</item>
+        <item name="android:textSize">@dimen/text_size_m_sp</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:elevation">3dp</item>
+    </style>
+</resources>

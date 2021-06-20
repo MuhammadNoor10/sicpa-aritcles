@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="title"
+            type="String" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolbarPrimary"
+            app:title="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/textColorWhite"
+            android:textSize="@dimen/text_size_xl_sp"
+            android:fontFamily="@font/roboto_regular"
+            tools:text="Toolbar Title"
+            android:text="@{title}"
+            android:gravity="center"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:singleLine="true"
+            />
+
+    </FrameLayout>
+</layout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

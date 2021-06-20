@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbarContainer"
+            layout="@layout/widget_toolbar"
+            app:title="@{@string/search}"
+            />
+
+        <EditText
+            android:id="@+id/etSearch"
+            style="@style/InputStyle.White"
+            android:layout_marginTop="50dp"
+            android:hint="@string/search_articles_here"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/MaterialButton.Primary"
+            android:layout_marginTop="15dp"
+            android:text="@string/search"
+            android:onClick="onClickSearch"
+            />
+
+    </LinearLayout>
+</layout>

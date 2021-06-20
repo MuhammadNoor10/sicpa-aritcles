@@ -1,0 +1,16 @@
+<resources>
+    <!--Text sizes-->
+    <!-- sp-->
+    <dimen name="text_size_xl_sp">18sp</dimen>
+    <dimen name="text_size_l_sp">16sp</dimen>
+    <dimen name="text_size_m_sp">14sp</dimen>
+    <dimen name="text_size_s_sp">12sp</dimen>
+    <dimen name="text_size_xs_sp">10sp</dimen>
+    <dimen name="text_size_22_sp">22sp</dimen>
+    <!-- dp-->
+    <dimen name="text_size_xl_dp">18dp</dimen>
+    <dimen name="text_size_l_dp">16dp</dimen>
+    <dimen name="text_size_m_dp">14dp</dimen>
+    <dimen name="text_size_s_dp">12dp</dimen>
+    <dimen name="text_size_xs_dp">10dp</dimen>
+</resources>

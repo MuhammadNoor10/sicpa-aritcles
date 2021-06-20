@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.MainActivity"
+        android:orientation="vertical"
+        >
+
+        <include
+            android:id="@+id/toolbarContainer"
+            layout="@layout/widget_toolbar"
+            app:title="@{@string/nyt}"
+            />
+
+        <TextView
+            style="@style/Bold.22"
+            android:text="@string/search"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <include
+            android:id="@+id/layoutSearchArticles"
+            layout="@layout/item_main"
+            app:label="@{@string/search_articles}"
+            />
+
+        <TextView
+            style="@style/Bold.22"
+            android:text="@string/popular"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <include
+            android:id="@+id/layoutMostViewed"
+            layout="@layout/item_main"
+            app:label="@{@string/most_viewed}"
+            />
+
+        <include
+            android:id="@+id/layoutMostShared"
+            layout="@layout/item_main"
+            app:label="@{@string/most_shared}"
+            />
+
+        <include
+            android:id="@+id/layoutMostEmailed"
+            layout="@layout/item_main"
+            app:label="@{@string/most_emailed}"
+            />
+
+    </LinearLayout>
+</layout>
